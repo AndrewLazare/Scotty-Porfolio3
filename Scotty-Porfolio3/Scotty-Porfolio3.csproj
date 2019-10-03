@@ -82,6 +82,9 @@
     <Content Include="favicon.ico" />
     <Content Include="Fonts\fontawesome-webfont.svg" />
     <Content Include="Fonts\ionicons.svg" />
+    <Content Include="Images\AndrewFavicon.png" />
+    <Content Include="Images\Bee 400x400.jpg" />
+    <Content Include="Images\Beeart.jpg" />
     <Content Include="Images\close.png" />
     <Content Include="Images\about-bg.jpg" />
     <Content Include="Images\about-mission.jpg" />
@@ -97,6 +100,7 @@
     <Content Include="Images\client-6.png" />
     <Content Include="Images\client-7.png" />
     <Content Include="Images\client-8.png" />
+    <Content Include="Images\factimg.png" />
     <Content Include="Images\facts-bg.jpg" />
     <Content Include="Images\facts-img.png" />
     <Content Include="Images\favicon.png" />
@@ -112,6 +116,10 @@
     <Content Include="Images\card2.jpg" />
     <Content Include="Images\card3.jpg" />
     <Content Include="Images\grapple.jpg" />
+    <Content Include="Images\fizzbuzz.jpg" />
+    <Content Include="Images\Math-Science-and-Technology-Poetry-and-Playlist.jpg" />
+    <Content Include="Images\Math.jpg" />
+    <Content Include="Images\mathematical-beauty.jpg" />
     <Content Include="Images\plan.jpg" />
     <Content Include="Images\web1.jpg" />
     <Content Include="Images\web2.jpg" />
@@ -163,6 +171,7 @@
     <Content Include="Fonts\ionicons.woff" />
     <None Include="packages.config" />
     <Content Include="site.webmanifest" />
+    <None Include="Properties\PublishProfiles\Andrew-Portfolio - Web Deploy.pubxml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

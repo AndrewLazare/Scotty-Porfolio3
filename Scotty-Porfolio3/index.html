@@ -9,9 +9,10 @@
 
     <!-- Favicons -->
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="Images/AndrewFavicon.png">
+    <!--<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">-->
     <link rel="manifest" href="/site.webmanifest">
+    >
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
@@ -174,13 +175,15 @@
                     <div class="col-md-4 wow fadeInUp">
                         <div class="about-col">
                             <div class="img">
-                                <img src="Images/grapple.jpg"  alt="" class="img-fluid">
-                                <div class="icon"<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#missionModal">
-                                </button><i class="ion-ios-speedometer-outline"></i></div>
+                                <img src="Images/grapple.jpg" alt="" class="img-fluid">
+                                <div class="icon">
+                                    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#missionModal"> </button>-->
+                                    <i class="ion-ios-speedometer-outline" data-toggle="modal" data-target="#planModal"></i>
+                                </div>
                             </div>
                             <h2 class="title"><a href="#">Mission Possible</a></h2>
                             <p>
-                              
+
                             </p>
                         </div>
                     </div>
@@ -189,12 +192,14 @@
                         <div class="about-col">
                             <div class="img">
                                 <img src="Images/about-plan.jpg" alt="" class="img-fluid">
-                                <div class="icon"<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#planModal">
-                                </button><i class="ion-ios-list-outline"></i></div>
+                                <div class="icon">
+                                    <!--<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#planModal"></button>-->
+                                    <i class="ion-ios-list-outline" data-toggle="modal" data-target="#missionModal"></i>
+                                </div>
                             </div>
                             <h2 class="title"><a href="#">My Plan</a></h2>
                             <p>
-                               
+
                             </p>
                         </div>
                     </div>
@@ -203,12 +208,15 @@
                         <div class="about-col">
                             <div class="img">
                                 <img src="Images/about-vision.jpg" alt="" class="img-fluid">
-                                <div class="icon"<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#visionModal">
-                                </button><i class="ion-ios-eye-outline"></i></div>
+                                <div class="icon">
+                                    <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#visionModal">
+                                    </button>-->
+                                        <i class="ion-ios-eye-outline" data-toggle="modal" data-target="#visionModal"></i>
+                                </div>
                             </div>
                             <h2 class="title"><a href="#">My Vision</a></h2>
                             <p>
-                             
+
                             </p>
                         </div>
                     </div>
@@ -266,7 +274,7 @@
             </div>
         </section><!-- #services -->
         <!--==========================
-          Call To Action Section
+          Resume Section
         ============================-->
         <section id="call-to-action" class="wow fadeIn">
             <div class="container text-center">
@@ -450,7 +458,7 @@
             <div class="container">
 
                 <header class="section-header">
-                    <h3>Our Clients</h3>
+                    <h3>My Proficiencies</h3>
                 </header>
 
                 <div class="owl-carousel clients-carousel">
@@ -469,7 +477,7 @@
         <!--==========================
           Clients Section
         ============================-->
-        <section id="testimonials" class="section-bg wow fadeInUp">
+        <!--<section id="testimonials" class="section-bg wow fadeInUp">
             <div class="container">
 
                 <header class="section-header">
@@ -536,32 +544,29 @@
                 </div>
 
             </div>
-        </section><!-- #testimonials -->
+        </section>--><!-- #testimonials -->
         <!--==========================
-          Team Section
+         Challenges Section
         ============================-->
         <section id="team">
             <div class="container">
                 <div class="section-header wow fadeInUp">
                     <h3>Coding Challenges</h3>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque</p>
+
                 </div>
 
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
                         <div class="member">
-                            <img src="Images/team-1.jpg" class="img-fluid" alt="">
+                            <img src="Images/mathematical-beauty.jpg" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Walter White</h4>
-                                    <span>Chief Executive Officer</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mathModal">
+                                        Numbers & Buttons
+                                    </button>
+                                    <span>A Math Function</span>
+
                                 </div>
                             </div>
                         </div>
@@ -569,17 +574,13 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="member">
-                            <img src="Images/team-2.jpg" class="img-fluid" alt="">
+                            <img src="Images/Beeart.jpg"  class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Sarah Jhonson</h4>
-                                    <span>Product Manager</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fizzModal">
+                                        FizzBuzz
+                                    </button>
+                                    <span>Fizz Buzz FizzBuzz</span>
                                 </div>
                             </div>
                         </div>
@@ -587,17 +588,14 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.2s">
                         <div class="member">
-                            <img src="Images/team-3.jpg" class="img-fluid" alt="">
+                            <img src="Images/factimg.png" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>William Anderson</h4>
-                                    <span>CTO</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#factModal">
+                                        Negative & Positive
+                                    </button>
+                                    <span>Factorial Fun</span>
+
                                 </div>
                             </div>
                         </div>
@@ -608,14 +606,11 @@
                             <img src="Images/team-4.jpg" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
-                                    <h4>Amanda Jepson</h4>
-                                    <span>Accountant</span>
-                                    <div class="social">
-                                        <a href=""><i class="fa fa-twitter"></i></a>
-                                        <a href=""><i class="fa fa-facebook"></i></a>
-                                        <a href=""><i class="fa fa-google-plus"></i></a>
-                                        <a href=""><i class="fa fa-linkedin"></i></a>
-                                    </div>
+                                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#palModal">
+                                        Backward and Forwards
+                                    </button>
+                                    <span>Is it a palindrome?</span>
+
                                 </div>
                             </div>
                         </div>
@@ -773,7 +768,7 @@
 
     <!-- The missionModal -->
     <div class="modal" id="missionModal">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-xl">
             <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -847,20 +842,20 @@
 
 
 
-                <!-- Modal footer -->
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-                </div>
+                        <!-- Modal footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                        </div>
 
-            </div>
-        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <!-- The planModal -->
+    <!-- The planModal -->    
     <div class="modal" id="planModal">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
                 <!-- Modal Header -->
@@ -925,6 +920,123 @@
     </div>
     <!-- The visionModal -->
     <div class="modal" id="visionModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--The mathModal-->
+
+    <div class="modal" id="mathModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title"> JS One</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+               
+                
+                
+                <!-- Modal body -->
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col text-center h3">
+                                Here is my first JS exercise
+                            </div>
+                        </div>
+                       
+                        <hr style="border: 2px solid black" />
+
+                       
+
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input1" placeholder="Enter number 1" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input2" placeholder="Enter number 2" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input3" placeholder="Enter number 3" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input4" placeholder="Enter number 4" class="form-control" />
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="text" id="input5" placeholder="Enter number 5" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn btn-success" id="btnMain">Calculate</button>
+                                        <button class="btn btn-warning" id="btnClear">Clear</button>
+                                        <button class="btn btn-dark" id="btnMain">Show Code</button>
+                                    </div>
+                                    
+                                   
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row"> <label id="resultsSum"></label></div>
+                                <div class="row"> <label id="resultsSmall"></label></div>
+                                <div class="row"> <label id="resultsLarge"></label></div>
+                                <div class="row"> <label id="resultsProduct"></label></div>
+                                <div class="row"> <label id="resultsAverage"></label></div>
+                            </div>
+                        </div>
+                       
+                         
+
+
+                        
+                    </div>
+
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!--The fizzModal-->
+
+    <div class="modal" id="fizzModal">
         <div class="modal-dialog">
             <div class="modal-content">
 
@@ -947,6 +1059,61 @@
             </div>
         </div>
     </div>
+    <!--The factModal-->
+    <div class="modal" id="factModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--The palModal-->
+    <div class="modal" id="palModal">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <!-- Modal Header -->
+                <div class="modal-header">
+                    <h4 class="modal-title">Modal Heading</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    Modal body..
+                </div>
+
+                <!-- Modal footer -->
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
     <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
     <!-- Uncomment below i you want to use a preloader -->
     <!-- <div id="preloader"></div> -->
@@ -971,5 +1138,82 @@
     =
     <script src="Script/main.js"></script>
 
+    <script>
+        //Step 1: Use JQuery to add a click event handler to my button
+
+            $('#btnMain').click(function () {
+
+
+            var num1 = Number($("#input1").val());
+            var num2 = Number($("#input2").val());
+            var num3 = Number($("#input3").val());
+            var num4 = Number($("#input4").val());
+            var num5 = Number($("#input5").val());
+
+            //Step 2: Make Calculations with the data
+            var sum = num1 + num2 + num3 + num4 + num5;
+            var smallest = Math.min(num1, num2, num3, num4, num5);
+            var largest = Math.max(num1, num2, num3, num4, num5);
+            var product = num1 * num2 * num3 * num4 * num5;
+            var average = sum / 5;
+
+
+
+
+            //Step 3: Out the result
+                var sumOutput = ("The sum of your numbers is " + sum);
+                $("#resultsSum").text(sumOutput);
+
+                var smallOutput = ("The smallest number is " + smallest);
+                $("#resultsSmall").text(smallOutput);
+
+                var largeOutput = ("The largest number is " + largest);
+                $("#resultsLarge").text(largeOutput);
+
+                var productOutput = ("The product of your numbers is " + product);
+                $("#resultsProduct").text(productOutput);
+
+                var averageOutput = ("The average of your numbers is " + average);
+                $("#resultsAverage").text(averageOutput);
+            });
+
+         $("#btnClear").click(function () {
+ 
+        $("#input1,#input2,#input3,#input4,#input5").val("");
+ 
+        $("#resultsSum").text("");
+        $("#resultsSmall").text("");
+        $("#resultsLarge").text("");
+        $("#resultsProduct").text("");
+        $("#resultsAverage").text("");
+ 
+         });
+     
+
+           
+
+
+    </script>
+
+
+
+
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
