@@ -29,7 +29,8 @@
 
     <!-- Main Stylesheet File -->
     <link href="Content/style.css" rel="stylesheet" />
-
+    <link href="Content/SyntaxHighlighter/shCore.css" rel="stylesheet" />
+    <link href="Content/SyntaxHighlighter/shThemeRDark.css" rel="stylesheet" />
     <!-- =======================================================
       Theme Name: BizPage
       Theme URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
@@ -211,7 +212,7 @@
                                 <div class="icon">
                                     <!--<button type="button" class="btn btn-success" data-toggle="modal" data-target="#visionModal">
                                     </button>-->
-                                        <i class="ion-ios-eye-outline" data-toggle="modal" data-target="#visionModal"></i>
+                                    <i class="ion-ios-eye-outline" data-toggle="modal" data-target="#visionModal"></i>
                                 </div>
                             </div>
                             <h2 class="title"><a href="#">My Vision</a></h2>
@@ -544,7 +545,8 @@
                 </div>
 
             </div>
-        </section>--><!-- #testimonials -->
+        </section>-->
+        <!-- #testimonials -->
         <!--==========================
          Challenges Section
         ============================-->
@@ -559,7 +561,7 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp">
                         <div class="member">
-                            <img src="Images/mathematical-beauty.jpg" class="img-fluid" alt="">
+                            <img src="Images/Math.jpg" k class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#mathModal">
@@ -574,7 +576,7 @@
 
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.1s">
                         <div class="member">
-                            <img src="Images/Beeart.jpg"  class="img-fluid" alt="">
+                            <img src="Images/Beeart.jpg" class="img-fluid" alt="">
                             <div class="member-info">
                                 <div class="member-info-content">
                                     <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#fizzModal">
@@ -853,7 +855,7 @@
         </div>
     </div>
 
-    <!-- The planModal -->    
+    <!-- The planModal -->
     <div class="modal" id="planModal">
         <div class="modal-dialog modal-lg">
             <div class="modal-content">
@@ -953,9 +955,9 @@
                     <h4 class="modal-title"> JS One</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
-               
-                
-                
+
+
+
                 <!-- Modal body -->
 
                 <div class="modal-body">
@@ -965,10 +967,10 @@
                                 Here is my first JS exercise
                             </div>
                         </div>
-                       
+
                         <hr style="border: 2px solid black" />
 
-                       
+
 
 
                         <div class="row">
@@ -1003,10 +1005,10 @@
                                     <div class="col">
                                         <button class="btn btn-success" id="btnMain">Calculate</button>
                                         <button class="btn btn-warning" id="btnClear">Clear</button>
-                                        <button class="btn btn-dark" id="btnMain">Show Code</button>
+                                        <button class="btn btn-dark" id="btnShow">Show Code</button>
                                     </div>
-                                    
-                                   
+
+
                                 </div>
                             </div>
                             <div class="col-6">
@@ -1017,11 +1019,51 @@
                                 <div class="row"> <label id="resultsAverage"></label></div>
                             </div>
                         </div>
-                       
-                         
+
+                        <div class="row" id="mathCode">
+                            <pre class="brush: js">
+             $('#btnMain').click(function () {
 
 
-                        
+            var num1 = Number($("#input1").val());
+            var num2 = Number($("#input2").val());
+            var num3 = Number($("#input3").val());
+            var num4 = Number($("#input4").val());
+            var num5 = Number($("#input5").val());
+
+            //Step 2: Make Calculations with the data
+            var sum = num1 + num2 + num3 + num4 + num5;
+            var smallest = Math.min(num1, num2, num3, num4, num5);
+            var largest = Math.max(num1, num2, num3, num4, num5);
+            var product = num1 * num2 * num3 * num4 * num5;
+            var average = sum / 5;
+
+          
+
+
+            //Step 3: Out the result
+            var sumOutput = ("The sum of your numbers is " + sum);
+            $("#resultsSum").text(sumOutput);
+
+            var smallOutput = ("The smallest number is " + smallest);
+            $("#resultsSmall").text(smallOutput);
+
+            var largeOutput = ("The largest number is " + largest);
+            $("#resultsLarge").text(largeOutput);
+
+            var productOutput = ("The product of your numbers is " + product);
+            $("#resultsProduct").text(productOutput);
+
+            var averageOutput = ("The average of your numbers is " + average);
+            $("#resultsAverage").text(averageOutput);
+        });
+                           
+
+                             </pre>
+                        </div>
+
+
+
                     </div>
 
                 </div>
@@ -1037,20 +1079,52 @@
     <!--The fizzModal-->
 
     <div class="modal" id="fizzModal">
-        <div class="modal-dialog">
+        <div class="modal-dialog modal-lg">
             <div class="modal-content">
 
                 <!-- Modal Header -->
                 <div class="modal-header">
-                    <h4 class="modal-title">Modal Heading</h4>
+                    <h4 class="modal-title">JS Two</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
 
                 <!-- Modal body -->
                 <div class="modal-body">
-                    Modal body..
-                </div>
+                    <div class="container">
 
+                        <div class="row">
+                            <div class="col text-center h2">
+                                Fizz Buzz FizzBuzz
+                            </div>
+                        </div>
+
+                        <hr style="border: 2px solid black" />
+
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="number" id="inputf1" placeholder="Enter number 1" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <input type="number" id="inputf2" placeholder="Enter number 2" class="form-control" />
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col">
+                                        <button class="btn btn-success" id="btnFizz">Fizz It!</button>
+                                        <button class="btn btn-warning" id="btnfClear">Clear</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row"> <label id="fbResults"></label></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 <!-- Modal footer -->
                 <div class="modal-footer">
                     <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
@@ -1133,15 +1207,17 @@
     <script src="Script/jquery.touchSwipe.min.js"></script>
     <!-- Contact Form JavaScript File -->
     <script src="Script/contactform.js"></script>
-
+    <script src="Scripts/SyntaxHighlighter/shCore.js"></script>
+    <script src="Scripts/SyntaxHighlighter/shBrushJScript.js"></script>
+    <script src="Scripts/SyntaxHighlighter/shBrushGroovy.js"></script>
     <!-- Template Main Javascript File -->
-    =
+    
     <script src="Script/main.js"></script>
 
     <script>
         //Step 1: Use JQuery to add a click event handler to my button
 
-            $('#btnMain').click(function () {
+        $('#btnMain').click(function () {
 
 
             var num1 = Number($("#input1").val());
@@ -1161,42 +1237,86 @@
 
 
             //Step 3: Out the result
-                var sumOutput = ("The sum of your numbers is " + sum);
-                $("#resultsSum").text(sumOutput);
+            var sumOutput = ("The sum of your numbers is " + sum);
+            $("#resultsSum").text(sumOutput);
 
-                var smallOutput = ("The smallest number is " + smallest);
-                $("#resultsSmall").text(smallOutput);
+            var smallOutput = ("The smallest number is " + smallest);
+            $("#resultsSmall").text(smallOutput);
 
-                var largeOutput = ("The largest number is " + largest);
-                $("#resultsLarge").text(largeOutput);
+            var largeOutput = ("The largest number is " + largest);
+            $("#resultsLarge").text(largeOutput);
 
-                var productOutput = ("The product of your numbers is " + product);
-                $("#resultsProduct").text(productOutput);
+            var productOutput = ("The product of your numbers is " + product);
+            $("#resultsProduct").text(productOutput);
 
-                var averageOutput = ("The average of your numbers is " + average);
-                $("#resultsAverage").text(averageOutput);
-            });
+            var averageOutput = ("The average of your numbers is " + average);
+            $("#resultsAverage").text(averageOutput);
+        });
 
-         $("#btnClear").click(function () {
- 
-        $("#input1,#input2,#input3,#input4,#input5").val("");
- 
-        $("#resultsSum").text("");
-        $("#resultsSmall").text("");
-        $("#resultsLarge").text("");
-        $("#resultsProduct").text("");
-        $("#resultsAverage").text("");
- 
-         });
-     
+        $("#btnClear").click(function () {
 
-           
+            $("#input1,#input2,#input3,#input4,#input5").val("");
 
+            $("#resultsSum").text("");
+            $("#resultsSmall").text("");
+            $("#resultsLarge").text("");
+            $("#resultsProduct").text("");
+            $("#resultsAverage").text("");
+
+        });
+        $("#mathCode").hide()
+        $("#btnShow").click(function () {
+            $("#mathCode").toggle()
+
+
+        });
 
     </script>
 
+    <script type="text/javascript">
+        SyntaxHighlighter.all()
+    </script>
+
+    <script>
+
+        $("#btnFizz").click(function() {
+           var returnValue = "";
+           var value1 = Number($("#inputf1").val());
+           var value2 = Number($("#inputf2").val());
+
+            for (let i = 1; i <= 100; i++) {
+                if ((i % value1 == 0) && (i % value2 == 0)) {
+                    returnValue += 'FizzBuzz ';
+                }
+                else if (i % value1 == 0) {
+                    returnValue += 'Fizz ';
+                }
+                else if (i % value2 == 0) {
+                    returnValue += 'Buzz ';
+                }
+                else {
+                    returnValue += i + ' ';
+                }
+            }
+
+             $("#fbResults").text(returnValue);
+        });
+         $("#btnfClear").click(function () {
+
+            $("#inputf1,#inputf2").val("");
+
+            $("#fbResults").text("");
+
+          $("#FizzBuzz ").style.color = "magenta";
+          $("#Fizz ").style.color = "blue";
+          $("#Buzz ").style.color = "lightblue";
+
+              
+         });
+       
 
 
+    </script>
 
 
 </body>
