@@ -181,21 +181,21 @@
     <Content Include="Scripts\SyntaxHighlighter\shBrushXml.js" />
     <Content Include="Scripts\SyntaxHighlighter\shCore.js" />
     <Content Include="Scripts\SyntaxHighlighter\shLegacy.js" />
-    <Content Include="Script\bootstrap.bundle.min.js" />
-    <Content Include="Script\contactform.js" />
-    <Content Include="Script\counterup.min.js" />
-    <Content Include="Script\easing.min.js" />
-    <Content Include="Script\hoverIntent.js" />
-    <Content Include="Script\isotope.pkgd.min.js" />
-    <Content Include="Script\jquery-migrate.min.js" />
-    <Content Include="Script\jquery.min.js" />
-    <Content Include="Script\jquery.touchSwipe.min.js" />
-    <Content Include="Script\lightbox.min.js" />
-    <Content Include="Script\main.js" />
-    <Content Include="Script\owl.carousel.min.js" />
-    <Content Include="Script\superfish.min.js" />
-    <Content Include="Script\waypoints.min.js" />
-    <Content Include="Script\wow.min.js" />
+    <Content Include="Scripts\bootstrap.bundle.min.js" />
+    <Content Include="Scripts\contactform.js" />
+    <Content Include="Scripts\counterup.min.js" />
+    <Content Include="Scripts\easing.min.js" />
+    <Content Include="Scripts\hoverIntent.js" />
+    <Content Include="Scripts\isotope.pkgd.min.js" />
+    <Content Include="Scripts\jquery-migrate.min.js" />
+    <Content Include="Scripts\jquery.min.js" />
+    <Content Include="Scripts\jquery.touchSwipe.min.js" />
+    <Content Include="Scripts\lightbox.min.js" />
+    <Content Include="Scripts\main.js" />
+    <Content Include="Scripts\owl.carousel.min.js" />
+    <Content Include="Scripts\superfish.min.js" />
+    <Content Include="Scripts\waypoints.min.js" />
+    <Content Include="Scripts\wow.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

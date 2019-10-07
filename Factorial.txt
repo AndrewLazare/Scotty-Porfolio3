@@ -1,0 +1,48 @@
+
+
+
+<script>//Computing the fctorial of  number without using recursion
+
+    function factorial(n)
+    {
+        if (n == 0 || n == 1) //If n is =  0 ||OR n is = 1
+            return 1; //then we want too return 1
+        }
+
+        var result = n; // creating a variable if the previous statement is not true
+
+        while (n > 1) // while loop created for if n is greater than 1
+        {
+            result = result * (n - 1); //result =n into n minus 1
+            n = n - 1;
+
+        }
+        return result; //returning what ever is present in this result variable
+    }
+
+    document.write(factorial(5)); //calling over our factorial function
+
+    //If we pass the functioin n and the (n == 0 || n == 1) is false it doesnt stay within this line of code.  it goes to rreturn 1;
+    // then it initializes the line var result = n;  5 is greater than 1 (n > 1)Then it passes the 5 to the function  
+    // The result is  equal to 5  result = result * (n - 1)  
+    // n = n - 1; is saying take the result  minus one then multiply it by the original result ...this happens all the way down to n - 1
+    //Is 1 > 1 no...so it comes out of the while loop so and returns that value and writes it to the document object
+</script>
+
+<script>//Computing a factorial with a recursive function
+    //A recursive function is a function that calls itself
+    function factorial(n) {
+        if (n == 0 || n == 1) //If n is =  0 ||OR n is = 1
+        {
+            return 1;
+
+        }
+
+        return n * factorial(n - 1);
+
+    }
+
+    document.write(factorial(5));
+
+    //Calling the same function over and over and over until n = 1 or n = 0  and then it will return.
+</script>
