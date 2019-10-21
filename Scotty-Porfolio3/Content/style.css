@@ -43,6 +43,7 @@ h6 {
   font-weight: 400;
   margin: 0 0 20px 0;
   padding: 0;
+  
 }
 
 /* Back to top button */
@@ -1569,27 +1570,28 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 @media (max-width: 768px) {
-  .back-to-top {
-    bottom: 15px;
-  }
+    .back-to-top {
+        bottom: 15px;
+    }
 
-  #header #logo h1 {
-    font-size: 28px;
-  }
+    #header #logo h1 {
+        font-size: 28px;
+    }
 
-  #header #logo img {
-    max-height: 40px;
-  }
+    #header #logo img {
+        max-height: 40px;
+    }
 
-  #intro h2 {
-    font-size: 28px;
-  }
+    #intro h2 {
+        font-size: 28px;
+    }
 
-  #nav-menu-container {
-    display: none;
-  }
+    #nav-menu-container {
+        display: none;
+    }
 
-  #mobile-nav-toggle {
-    display: inline;
-  }
+    #mobile-nav-toggle {
+        display: inline;
+    }
 }
+
