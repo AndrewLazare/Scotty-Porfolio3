@@ -111,6 +111,8 @@
     <Content Include="Images\about-vision.jpg" />
     <Content Include="Images\apple-touch-icon.png" />
     <Content Include="Images\call-to-action-bg.jpg" />
+    <Content Include="Images\ColonyMainLogo.png" />
+    <Content Include="Images\ColonyNameLogo.png" />
     <Content Include="Images\download %281%29.jpg" />
     <Content Include="Images\download.jpg" />
     <Content Include="Images\eyeabout1.png" />
@@ -216,6 +218,7 @@
     <Content Include="Fonts\ionicons.eot" />
     <Content Include="Fonts\ionicons.ttf" />
     <Content Include="Fonts\ionicons.woff" />
+    <Content Include="Images\Andrew Lazare FINAL Resume.pdf" />
     <None Include="packages.config" />
     <Content Include="site.webmanifest" />
     <None Include="Properties\PublishProfiles\Andrew-Portfolio - Web Deploy.pubxml" />
